@@ -1,0 +1,46 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Faz com que ocupe toda a altura da página */
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url(../images/image_festa\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* Centraliza a imagem */
+
+    .container {
+        position: relative;
+        z-index: 2; /* Garante que o conteúdo fique acima do overlay */
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        content: '';
+        opacity: 0.6; 
+        z-index: 1; 
+    }
+
+    &__text {
+        margin-top: 55px;
+        margin-bottom: 55px;
+        font-size: 39px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__info {
+        margin-top: 40px;
+        font-size: 15px;
+        color: #fff;
+        font-weight: 400;
+        text-align: center;
+        
+    }
+}

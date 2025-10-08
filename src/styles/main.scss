@@ -1,0 +1,37 @@
+@use 'hero';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    
+}
+
+.container {
+    max-width: 580px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.button {
+    width: 300px;
+    height: 80px;
+    padding: 12px;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+
+    &--primary {
+        color: #fff;
+        background-color: #EB7B35;
+    }
+}

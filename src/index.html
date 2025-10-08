@@ -4,11 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aniversario</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
+
 </head>
 <body>
-    <img src="./images/image_festa 1.png" alt="">
+    <header class="hero">
+        <div class="container">
 
+            <p class="hero__text">
+                Você está convidado para a festa! <br><br>
+                <span id="contador"></span>
+            </p>
+
+            <button class="button button--primary">
+                Confirmar Presença
+            </button>
+
+            <p class="hero__info">
+                <strong>Informações</strong> <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore maiores modi facere nam exercitationem! Porro cupiditate sequi saepe ipsum quidem voluptatibus veniam. Odit minima quo quasi facere mollitia nulla facilis?
+            </p>
+
+        </div>
+    </header>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
